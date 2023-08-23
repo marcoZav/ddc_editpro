@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAS Visual Analytics Custom Data Table</title>
+    <style>
+        body {
+            font-family: AvenirNext, Helvetica, Arial, sans-serif;
+            font-size: .8889rem;
+            background-color: #FFFFFF;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        th, td {
+            padding: 0.25rem .5rem;
+        }
+
+        tbody, tr + tr {
+            border-top: 1px solid rgb(231, 231, 231);
+        }
+
+        th + th, td + td {
+            border-left: 1px solid rgb(231, 231, 231);
+        }
+
+        .numeric {
+            text-align: right;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0.5em;
+        }
+
+        body::-webkit-scrollbar:horizontal {
+            height: 0.5em;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+
+        body::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        #sample {
+            display: block;
+        }
+    </style>
+</head>
+
+<body  >
+
+<!--- INS_BODY --->
+
+<div id="instruction">
+    <p>custom_table.html di oggetto DDC VA, modificato</p>
+</div>
+
+<div id="ll">
+ <input type="checkbox" id="checkLock" name="chk1" value="lock">
+ <label for="chk1"> Lock data update</label>
+ <label id="lab1"></label>
+ <br><br>
+ <label id="labStatus"></label>
+ <label id="labMsg"></label>
+ <br><br>
+</div>
+ 
+<br>
+
+<!--
+<div id="form">
+<form action="http://server.demo.sas.com/SASJobExecution/" method="get">
+  
+  <input type="hidden" name="_program" value="/Public/jformSave01">
+  <input type="hidden" name="_action" name="execute">
+  <label >edited data -- debug</label>  <input type="text" name="dataString" id="dataString1">
+  <input type="submit" value="SAVE">
+</form>
+</div>
+-->
+
+<br>
+
+<div id="sample">
+</div>
+
+<br><br>
+<input type="button" value="SAVE" onClick="runSave()">
+
+
+<!--- INS_SCRIPT --->
+
+</body>
+</html>
